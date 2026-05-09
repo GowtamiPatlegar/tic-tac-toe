@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <section class="header-panel">
+      <div>
+        <p class="eyebrow">Classic Strategy</p>
+        <h1>Tic Tac Toe</h1>
+        <p class="subtext">Play against a friend and see who can connect three first.</p>
+      </div>
+      <div class="stack">
+        <div class="score-row">
+          <div class="score-card x-score">
+            <span class="score-label">X</span>
+            <span id="xScore">0</span>
+          </div>
+          <div class="score-card o-score">
+            <span class="score-label">O</span>
+            <span id="oScore">0</span>
+          </div>
+          <div class="score-card draw-score">
+            <span class="score-label">Draws</span>
+            <span id="drawScore">0</span>
+          </div>
+        </div>
+        <button id="restartButton" class="primary-btn">Restart Game</button>
+      </div>
+    </section>
+
+    <section class="board-card">
+      <div class="status-panel">
+        <span id="statusText">X's turn</span>
+      </div>
+      <div class="board" id="board">
+        <button class="cell" data-index="0"></button>
+        <button class="cell" data-index="1"></button>
+        <button class="cell" data-index="2"></button>
+        <button class="cell" data-index="3"></button>
+        <button class="cell" data-index="4"></button>
+        <button class="cell" data-index="5"></button>
+        <button class="cell" data-index="6"></button>
+        <button class="cell" data-index="7"></button>
+        <button class="cell" data-index="8"></button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
